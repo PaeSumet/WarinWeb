@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="th">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- เชื่อมกับ CSS -->
+  <link rel="stylesheet" href="styleMoblie.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>โรงเรียนวารินชำราบ</title>
+  <link rel="icon" type="image/x-icon" href="img/Logo.png">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+</style>
+</head>
+</html>
+
+<body>
+<div id="imageModal" class="modal" onclick="hideFullscreen()">
+  <img id="modalImage">
+</div>
+    <ol>
+        <div class="section1">
+          <div class="mobile-only">
+            <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html"><img src="img/home.png" style="width: auto; height: 20px;"> หน้าหลัก</a>
+
+            <button class="dropdown-btn"><img src="img/school.png" style="width: auto; height: 20px;"> โรงเรียนของเรา <span style="opacity: 0.5;">▼</span></button>
+            <div class="dropdown-container">
+              <a href="http://www.warin.ac.th/web/ourschool.html" target="_blank">ประวัติโรงเรียน/ข้อมูลทั่วไป</a>
+              <a href="http://www.warin.ac.th/web/vision.html" target="_blank">วิสัยทัศน์/พันธกิจ</a>
+              <a href="http://www.warin.ac.th/web/flowchart.html" target="_blank">โครงสร้างการบริหาร</a>
+              <a href="http://www.warin.ac.th/web/success.html" target="_blank">เกียรติบัตรและผลงาน</a>
+            </div>
+            
+            <button class="dropdown-btn"><img src="img/page.png" style="width: auto; height: 20px;"> เพจ <span style="opacity: 0.5;">▼</span></button>
+            <div class="dropdown-container">
+                  <a href="https://www.facebook.com/warinchamrapschool" target="_blank">โรงเรียนวารินชำราบ</a>
+                  <a href="https://www.facebook.com/avprwarin" target="_blank">AV-PRWarin</a>
+                  <a href="https://www.facebook.com/socialstudieswarinchamrapschool" target="_blank">PR กลุ่มงานวิชาการ</a>
+                  <a href="https://www.facebook.com/profile.php?id=100057336105284" target="_blank">กลุ่มงานกิจการนักเรียน</a>
+                  <a href="https://www.facebook.com/profile.php?id=61560930897660" target="_blank">กลุ่มสาระการเรียนรู้คณิตศาสตร์</a>
+                  <a href="https://www.facebook.com/profile.php?id=61559176966971" target="_blank">กลุ่มสาระการเรียนรู้ภาษาไทย</a>
+                  <a href="https://www.facebook.com/socialstudieswarinchamrapschool" target="_blank">กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม</a>
+                  <a href="https://www.facebook.com/profile.php?id=61551920730864" target="_blank">คณะกรรมการสภานักเรียน</a>
+                  <a href="https://www.facebook.com/profile.php?id=100063507641592" target="_blank">ทีมอาสาป้องกันภัย</a>
+                  <a href="https://www.facebook.com/profile.php?id=100071473058607" target="_blank">ทีมกีฬาฟุตซอลโรงเรียนวารินชำราบ</a>
+                  <a href="https://www.facebook.com/profile.php?id=100064187558726" target="_blank">วอลเลย์บอลโรงเรียนวารินชำราบ </a>
+                  <a href="https://www.facebook.com/samrongwitta" target="_blank">วงโปงลางเพชรวาริน</a>
+            </div>
+            
+            <button class="dropdown-btn"><img src="img/relation.png" style="width: auto; height: 20px;"> ประชาสัมพันธ์ <span style="opacity: 0.5;">▼</span></button>
+            <div class="dropdown-container">
+                  <a href="https://www.facebook.com/avprwarin">ข่าวประชาสัมพันธ์</a>
+                  <a href="https://www.facebook.com/warinchamrapschool">กิจกรรมในโรงเรียน</a>
+            </div>
+
+            <button class="dropdown-btn"><img src="img/teamwork.png" style="width: auto; height: 20px;"> บุคลากร <span style="opacity: 0.5;">▼</span></button>
+            <div class="dropdown-container">
+                  <a href="http://www.warin.ac.th/web/perteach.html">บุคลกร</a>
+                  <a href="http://www.warin.ac.th/web/boss.html" target="_blank">ทำเนียบผู้บริหาร</a>
+                  <a href="http://www.warin.ac.th/web/eduorg.html" target="_blank">คณะกรรมการสถานศึกษาขั้นพื้นฐาน</a>
+            </div>
+
+            <button class="dropdown-btn"><img src="img/information.png" style="width: auto; height: 20px;"> ระบบสาระสนเทศ <span style="opacity: 0.5;">▼</span></button>
+            <div class="dropdown-container">
+                  <a href="https://warin.stu-mis.online/index-1.php">ระบบดูแลช่วยเหลือนักเรียน</a>
+                  <a href="https://sites.google.com/warin.ac.th/homegps">GPS บ้านนักเรียน</a>
+                  <a href="http://wr1.warin.ac.th/smss/index.php">ระบบ SMSS</a>
+                  <a href="https://mail.google.com/mail/u/2/#inbox">ระบบ Email โรงเรียน</a>
+                  <a href="http://wr3.warin.ac.th/datakruwarin/">ระบบสาระสนเทศครูและบุคลากร</a>
+                  <a href="http://wr3.warin.ac.th/e-pension/">บัญชีรับ-จ่ายข้าราชการบำนาญ</a>
+            </div>
+
+            <button class="dropdown-btn"><img src="img/academic.png" style="width: auto; height: 20px;"> วิชาการ <span style="opacity: 0.5;">▼</span></button>
+            <div class="dropdown-container">
+                  <a href="http://www.warin.ac.th/web/learning_group.html">บทเรียนออนไลน์</a>
+                  <a href="https://sites.google.com/warin.ac.th/kru-schedule">ตารางสอนครู</a>
+                  <a href="https://sites.google.com/warin.ac.th/schedule">ตารางเรียนนักเรียน</a>
+                  <a href="https://sgs6.bopp-obec.info/sgss/Security/SignIn.aspx">SGS Online</a>
+                  <a href="https://sites.google.com/warin.ac.th/activelearningplan?fbclid=IwAR04Qb15ooLRWD5s-CSlmunZou5TyyJVd-8XrJG6rQzjbF7I5VOJNMezaag">ทะเบียนการเรียนรู้</a>
+            </div>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+
+              dropdownButtons.forEach(button => {
+              button.addEventListener('click', function () {
+                  const dropdown = this.nextElementSibling;
+                  dropdown.classList.toggle('open');
+                });
+              });
+            });
+          </script>
+        </div>
+          <button class="openbtn" onclick="openNav()" style="position: absolute; top: 0; left: 0;">☰ เมนูระบบ</button> 
+          </div>
+
+        <div class="Headermenu desktop-only">
+            <a href="index.html"><img src="img/Tag3.png" class="Tag ZoomIn"></a>
+            <div class="menu">
+              <a href="index.html">
+              <img src="img/home.png" style="width: auto; height: 20px; margin-top: 10px;" class="">
+                หน้าหลัก
+              </a>
+            </div>
+            <div class="menu">
+              <a href="http://www.warin.ac.th/web/ourschool.html" target="_blank">
+              <img src="img/school.png" style="width: auto; height: 20px;">
+                โรงเรียนของเรา<span style="opacity: 0.5;">▼</span>
+              </a>
+                <div class="dropdown">
+                  <a href="http://www.warin.ac.th/web/ourschool.html" target="_blank">ประวัติโรงเรียน/ข้อมูลทั่วไป</a>
+                  <a href="http://www.warin.ac.th/web/vision.html" target="_blank">วิสัยทัศน์/พันธกิจ</a>
+                  <a href="http://www.warin.ac.th/web/flowchart.html" target="_blank">โครงสร้างการบริหาร</a>
+                  <a href="http://www.warin.ac.th/web/success.html" target="_blank">เกียรติบัตรและผลงาน</a>
+                </div>
+            </div>
+
+            <div class="menu">
+              <a href="https://www.facebook.com/warinchamrapschool" target="_blank">
+                <img src="img/page.png" style="width: auto; height: 20px;">
+                  เพจ<span style="opacity: 0.5;">▼</span>
+                </a>
+                <div class="dropdown">
+                  <a href="https://www.facebook.com/warinchamrapschool" target="_blank">โรงเรียนวารินชำราบ</a>
+                  <a href="https://www.facebook.com/avprwarin" target="_blank">AV-PRWarin</a>
+                  <a href="https://www.facebook.com/socialstudieswarinchamrapschool" target="_blank">PR กลุ่มงานวิชาการ</a>
+                  <a href="https://www.facebook.com/profile.php?id=100057336105284" target="_blank">กลุ่มงานกิจการนักเรียน</a>
+                  <a href="https://www.facebook.com/profile.php?id=61560930897660" target="_blank">กลุ่มสาระการเรียนรู้คณิตศาสตร์</a>
+                  <a href="https://www.facebook.com/profile.php?id=61559176966971" target="_blank">กลุ่มสาระการเรียนรู้ภาษาไทย</a>
+                  <a href="https://www.facebook.com/socialstudieswarinchamrapschool" target="_blank">กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนาและวัฒนธรรม</a>
+                  <a href="https://www.facebook.com/profile.php?id=61551920730864" target="_blank">คณะกรรมการสภานักเรียน</a>
+                  <a href="https://www.facebook.com/profile.php?id=100063507641592" target="_blank">ทีมอาสาป้องกันภัย</a>
+                  <a href="https://www.facebook.com/profile.php?id=100071473058607" target="_blank">ทีมกีฬาฟุตซอลโรงเรียนวารินชำราบ</a>
+                  <a href="https://www.facebook.com/profile.php?id=100064187558726" target="_blank">วอลเลย์บอลโรงเรียนวารินชำราบ </a>
+                  <a href="https://www.facebook.com/samrongwitta" target="_blank">วงโปงลางเพชรวาริน</a>
+                </div>
+            </div>
+
+            <div class="menu">
+              <a href="https://www.facebook.com/avprwarin" target="_blank">
+                <img src="img/relation.png" style="width: auto; height: 20px;">
+                ประชาสัมพันธ์<span style="opacity: 0.5;">▼</span>
+                </a>
+                <div class="dropdown">
+                  <a href="https://www.facebook.com/avprwarin">ข่าวประชาสัมพันธ์</a>
+                  <a href="https://www.facebook.com/warinchamrapschool">กิจกรรมในโรงเรียน</a>
+                </div>
+            </div>
+
+            <div class="menu">
+              <a href="http://www.warin.ac.th/web/perteach.html" target="_blank">
+                <img src="img/teamwork.png" style="width: auto; height: 20px;">
+                บุคลากร<span style="opacity: 0.5;">▼</span>
+                </a>
+                <div class="dropdown">
+                  <a href="http://www.warin.ac.th/web/perteach.html">บุคลกร</a>
+                  <a href="http://www.warin.ac.th/web/boss.html" target="_blank">ทำเนียบผู้บริหาร</a>
+                  <a href="http://www.warin.ac.th/web/eduorg.html" target="_blank">คณะกรรมการสถานศึกษาขั้นพื้นฐาน</a>
+                </div>
+            </div>
+
+            <div class="menu">
+              <a href="http://www.warin.ac.th/web/learning_group.html" target="_blank">
+                <img src="img/information.png" style="width: auto; height: 20px;">
+                ระบบสาระสนเทศ<span style="opacity: 0.5;">▼</span>
+                </a>
+                <div class="dropdown">
+                  <a href="https://warin.stu-mis.online/index-1.php">ระบบดูแลช่วยเหลือนักเรียน</a>
+                  <a href="https://sites.google.com/warin.ac.th/homegps">GPS บ้านนักเรียน</a>
+                  <a href="http://wr1.warin.ac.th/smss/index.php">ระบบ SMSS</a>
+                  <a href="https://mail.google.com/mail/u/2/#inbox">ระบบ Email โรงเรียน</a>
+                  <a href="http://wr3.warin.ac.th/datakruwarin/">ระบบสาระสนเทศครูและบุคลากร</a>
+                  <a href="http://wr3.warin.ac.th/e-pension/">บัญชีรับ-จ่ายข้าราชการบำนาญ</a>
+                </div>
+            </div>
+
+            <div class="menu">
+              <a href="https://www.facebook.com/socialstudieswarinchamrapschool" target="_blank">
+                <img src="img/academic.png" style="width: auto; height: 20px;">
+                วิชาการ<span style="opacity: 0.5;">▼</span>
+                </a>
+                <div class="dropdown">
+                  <a href="http://www.warin.ac.th/web/learning_group.html">บทเรียนออนไลน์</a>
+                  <a href="https://sites.google.com/warin.ac.th/kru-schedule">ตารางสอนครู</a>
+                  <a href="https://sites.google.com/warin.ac.th/schedule">ตารางเรียนนักเรียน</a>
+                  <a href="https://sgs6.bopp-obec.info/sgss/Security/SignIn.aspx">SGS Online</a>
+                  <a href="https://sites.google.com/warin.ac.th/activelearningplan?fbclid=IwAR04Qb15ooLRWD5s-CSlmunZou5TyyJVd-8XrJG6rQzjbF7I5VOJNMezaag">ทะเบียนการเรียนรู้</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <a href="index.html"><img src="img/Tag3.png" class="Tag-moblie ZoomIn mobile-only"></a>
+
+        <div class="section2">
+          <img class="banner-full desktop-only" src="img/BackGround01.jpg" alt="ภาพเต็มจอ">
+
+  <div class="slider-container mobile-only" style="margin-top: 10px">
+    <div class="slider slider-1">
+      <div class="track">
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01moblie.jpg" alt="Slide 1" draggable="false"></a></div>
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01moblie.jpg" alt="Slide 2" draggable="false"></a></div>
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01moblie.jpg" alt="Slide 3" draggable="false"></a></div>
+
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01moblie.jpg" alt="Slide 4" draggable="false"></a></div>
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01moblie.jpg" alt="Slide 5" draggable="false"></a></div>
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01moblie.jpg" alt="Slide 6" draggable="false"></a></div>
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01moblie.jpg" alt="Slide 7" draggable="false"></a></div>
+      </div>
+    </div>
+  </div>
+<br><br><br>
+<img src="img/Maneger.png" alt="profile" class="profile-img ZoomIn mobile-only container-profile" style="animation-delay: 0.5s;">
+  <div class="slider-container mobile-only">
+    <div class="slider slider-2 ZoomIn" style="animation-delay: 0.7s; margin-top: 550px;">
+      <div class="track">
+        <div class="slide"><img src="img/vicemaneger3.png" draggable="false" onclick="showFullscreen(this)"></div>
+        <div class="slide"><img src="img/vicemaneger1.png" draggable="false" onclick="showFullscreen(this)"></div>
+        <div class="slide"><img src="img/vicemaneger2.png" draggable="false" onclick="showFullscreen(this)"></div>
+
+        <div class="slide"><img src="img/vicemaneger3.png" draggable="false" onclick="showFullscreen(this)"></div>
+        <div class="slide"><img src="img/vicemaneger1.png" draggable="false" onclick="showFullscreen(this)"></div>
+        <div class="slide"><img src="img/vicemaneger2.png" draggable="false" onclick="showFullscreen(this)"></div>
+        <div class="slide"><img src="img/vicemaneger1.png" draggable="false" onclick="showFullscreen(this)"></div>
+      </div>
+    </div>
+  </div>
+
+<!-- Slider 1 (ขนาดเล็ก) -->
+  <div class="slider-container desktop-only">
+    <div class="slider slider-1">
+      <div class="track">
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01.jpg" alt="Slide 1" draggable="false"></a></div>
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01.jpg" alt="Slide 2" draggable="false"></a></div>
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01.jpg" alt="Slide 3" draggable="false"></a></div>
+
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01.jpg" alt="Slide 4" draggable="false"></a></div>
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01.jpg" alt="Slide 5" draggable="false"></a></div>
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01.jpg" alt="Slide 6" draggable="false"></a></div>
+        <div class="slide"><a href="https://www.facebook.com/warinchamrapschool/posts/pfbid0A8FCGmJKFGNTL4Pm3nERkhB1FbM3tuhQ7744ZCJyfDz4mWSuRTbbN1M1u87LBkT8l" target="_blank" draggable="false"><img src="img/new01.jpg" alt="Slide 7" draggable="false"></a></div>
+      </div>
+    </div>
+  </div>
+  <img src="img/Maneger.png" alt="profile" class="profile-img ZoomIn desktop-only" style="animation-delay: 0.5s;">
+
+  <!-- Slider 2 (ขนาดใหญ่) -->
+  <div class="slider-container desktop-only">
+    <div class="slider slider-2 ZoomIn" style="animation-delay: 0.7s;">
+      <div class="track">
+        <div class="slide"><img src="img/vicemaneger3.png" draggable="false" onclick="showFullscreen(this)"></div>
+        <div class="slide"><img src="img/vicemaneger1.png" draggable="false" onclick="showFullscreen(this)"></div>
+        <div class="slide"><img src="img/vicemaneger2.png" draggable="false" onclick="showFullscreen(this)"></div>
+
+        <div class="slide"><img src="img/vicemaneger3.png" draggable="false" onclick="showFullscreen(this)"></div>
+        <div class="slide"><img src="img/vicemaneger1.png" draggable="false" onclick="showFullscreen(this)"></div>
+        <div class="slide"><img src="img/vicemaneger2.png" draggable="false" onclick="showFullscreen(this)"></div>
+        <div class="slide"><img src="img/vicemaneger1.png" draggable="false" onclick="showFullscreen(this)"></div>
+      </div>
+    </div>
+  </div>
+        </div> 
+        <div class="section2-5">
+          <div class="grid-container">
+           <!-- รูปภาพรอบที่ 1 -->
+        <div class="scroll-content" id="scrollContent">
+          <a href="https://www.facebook.com/story.php?story_fbid=1255360486590006&id=100063481993586&mibextid=wwXIfr&rdid=MWefWXO8gi0xLnIL#" target="_blank"><div class="smallnewpaper"><img src="img/sm01.jpg" class="smallnewpaper-img"></img></div></a>
+          <a href="https://www.facebook.com/photo.php?fbid=1264544499004938&set=pb.100063481993586.-2207520000&type=3" target="_blank"><div class="smallnewpaper"><img src="img/sm02.jpg" class="smallnewpaper-img"></img></div></a>
+          <a href="https://www.facebook.com/photo.php?fbid=1261859582606763&set=pb.100063481993586.-2207520000&type=3" target="_blank"><div class="smallnewpaper"><img src="img/sm03.jpg" class="smallnewpaper-img"></img></div></a>
+           <!-- รูปภาพรอบที่ 2 -->
+           <a href="https://www.facebook.com/story.php?story_fbid=1255360486590006&id=100063481993586&mibextid=wwXIfr&rdid=MWefWXO8gi0xLnIL#" target="_blank"><div class="smallnewpaper"><img src="img/sm01.jpg" class="smallnewpaper-img"></img></div></a>
+           <a href="https://www.facebook.com/photo.php?fbid=1264544499004938&set=pb.100063481993586.-2207520000&type=3" target="_blank"><div class="smallnewpaper"><img src="img/sm02.jpg" class="smallnewpaper-img"></img></div></a>
+           <a href="https://www.facebook.com/photo.php?fbid=1261859582606763&set=pb.100063481993586.-2207520000&type=3" target="_blank"><div class="smallnewpaper"><img src="img/sm03.jpg" class="smallnewpaper-img"></img></div></a>
+           <!-- รูปภาพรอบที่ 2 -->
+           <a href="https://www.facebook.com/story.php?story_fbid=1255360486590006&id=100063481993586&mibextid=wwXIfr&rdid=MWefWXO8gi0xLnIL#" target="_blank"><div class="smallnewpaper"><img src="img/sm01.jpg" class="smallnewpaper-img"></img></div></a>
+           <a href="https://www.facebook.com/photo.php?fbid=1264544499004938&set=pb.100063481993586.-2207520000&type=3" target="_blank"><div class="smallnewpaper"><img src="img/sm02.jpg" class="smallnewpaper-img"></img></div></a>
+           <a href="https://www.facebook.com/photo.php?fbid=1261859582606763&set=pb.100063481993586.-2207520000&type=3" target="_blank"><div class="smallnewpaper"><img src="img/sm03.jpg" class="smallnewpaper-img"></img></div></a>
+           <!-- หมายเหตุใส่2รอบเพื่อให้smooth -->
+        </div>
+        </div>
+        </div>
+        <div class="section3">
+            <h1 style="text-align: center;">69ปี โรงเรียนวารินชำราบ</h1>
+            <br>
+            <h1 style="text-align: center; margin-top: -30px;">๑อำเภอ ๑โรงเรียนในฝัน</h1>
+        </div>
+        <div class="section4">
+          <div class="button-grid">
+            <a href="https://sgs6.bopp-obec.info/sgss/View_TransScoreSub/Show-View-TransScoreSub-Table.aspx" target="_blank" class="custom-button green">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/report-card.png" />
+              ผลการเรียน
+            </a>
+            <a href="http://warin.ac.th/web/learning_group.html" target="_blank" class="custom-button pink">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/form.png" />
+              หลักสูตรออนไลน์
+            </a>
+            <a href="https://sites.google.com/warin.ac.th/schedule" target="_blank" class="custom-button lightgreen">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/calendar--v1.png" />
+              ตารางเรียน
+            </a>
+            <a href="https://sgs6.bopp-obec.info/sgss/TblTranscripts/Show-TblTranscripts-Table-0rmAllYr.aspx" target="_blank" class="custom-button pink">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/test-results.png" />
+              ผลการเรียนที่ไม่ผ่าน
+            </a>
+            <a href="https://sgs6.bopp-obec.info/sgss/Reports/ReGradeReq.aspx" target="_blank" class="custom-button blue">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/form.png" />
+              คำร้องขอแก้ตัว
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdF1OVTcCGRemLo1jbE1yVEe0PuFHUpFNzLcVLb4TrGv_2n0Q/viewform" target="_blank" class="custom-button purple">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/bill.png" />
+              ฟอร์มขอรับบริการเมล์
+            </a>
+            <a href="http://www.warin.ac.th/eforum/index.htm" target="_blank" class="custom-button red">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/planner.png" />
+              ห้องพักครู
+            </a>
+            <a href="http://wr1.warin.ac.th/smss/index.php" target="_blank" class="custom-button orange">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/id-verified.png" />
+              ระบบ SMSS
+            </a>
+          </div>
+        </div>
+        <div class="section5">
+          <a href="https://warin.stu-mis.online/index-1.php" target="_blank"><div class="Doolead">ระบบดูแลช่วยเหลือนักเรียน</div></a>
+          <br>
+          <p class="subtitle">สำหรับ นักเรียน ครู ผู้ปกครอง และผู้ดูแลระบบ</p>
+          <div class="role-grid">
+            <a href="https://warin.stu-mis.online/stu/index.php" target="_blank" class="role student">
+              <img src="https://img.icons8.com/ios-filled/50/4caf50/student-male.png" />
+              <span>นักเรียน</span>
+            </a>
+            <a href="https://warin.stu-mis.online/index.php" target="_blank" class="role teacher">
+              <img src="https://img.icons8.com/ios-filled/50/1976d2/teacher.png" />
+              <span>ครู</span>
+            </a>
+            <a href="https://warin.stu-mis.online/father/index.php" target="_blank" class="role parent">
+              <img src="https://img.icons8.com/ios-filled/50/f57c00/family.png" />
+              <span>ผู้ปกครอง</span>
+            </a>
+            <a href="https://warin.stu-mis.online/master/index.php" target="_blank" class="role admin">
+              <img src="https://img.icons8.com/ios-filled/50/c2185b/admin-settings-male.png" />
+              <span>ผู้บริหาร</span>
+            </a>
+            </div>
+        </div>
+        <div class="section6">
+            <div class="stat-box">
+              <img src="https://img.icons8.com/color/96/student-male--v1.png" alt="นักเรียน">
+              <div class="label">นักเรียน</div>
+              <div class="number" data-target="1358">0</div>
+            </div>
+            <div class="stat-box">
+              <img src="https://img.icons8.com/color/96/teacher.png" alt="ข้าราชการครู">
+              <div class="label">ข้าราชการครู</div>
+              <div class="number" data-target="67">0</div>
+            </div>
+            <div class="stat-box">
+              <img src="https://img.icons8.com/color/96/group-background-selected.png" alt="บุคลากรทางการศึกษา">
+              <div class="label">บุคลากรทางการศึกษา</div>
+              <div class="number" data-target="14">0</div>
+          </div>
+          <div class="stat-box">
+            <img src="img/online-course.png" alt="หลักสูตร">
+            <div class="label">แผนการเรียน</div>
+            <div class="number" data-target="7">0</div>
+        </div>
+        </div>
+        <div class="section7">
+          <span class="information-text"><img src="img/ActivityPictures.png"alt="ภาพกิจกรรมโรงเรียน" style="width: auto; height: 40px; margin-top: 15px;">ภาพกิจกรรมโรงเรียน</span>
+          <div class="information-Grip">
+
+          <a href="https://www.facebook.com/avprwarin/posts/pfbid0cGW6bLsed6Wtq2LS7T1KtRVoFAxfUyrZMqBiMN825Pg5r6F37TbkbvcTSUK1xdkrl?rdid=exitkX3r0LeBLsQ0#" target="_blank">
+            <div class="information-card">
+                <img src="img/song-gran-68.png">
+              <div class="information-subtitle">
+                โรงเรียนวารินชำราบ จัดพิธีเปลี่ยนผ้าอังสะพระพุทธรูปประจำโรงเรียน และรดน้ำขอพรผู้ใหญ่ เนื่องในโอกาสวันสงกรานต์ ปี 2568 เมื่อวันที่ 9 เมษายน พ.ศ.2568 ณ ห้องโสตทัศนศึกษา โรงเรียนวารินชำราบ
+              </div>
+            </div>
+          </a>
+            
+          <a href="https://www.facebook.com/avprwarin/posts/pfbid02sxL9GYfuSWwWY9M2nT3H9sPpWXpChzY7X7p77bnJCYBsSZzSibFqsFGCHmTUG9bRl?rdid=uGyk6mqHyaW0byyt#" target="_blank">
+            <div class="information-card">
+                <img src="img/stunew68.png">
+              <div class="information-subtitle">
+                โรงเรียนวารินชำราบ รับมอบตัวนักเรียนใหม่ ม.1 และ ม.4 ประจำปีการศึกษา 2568 เมื่อวันที่ 8 เมษายน 2568 ณ ห้องโสตทัศนศึกษา โรงเรียนวารินชำราบ
+              </div>
+            </div>
+          </a>
+
+            <a href="https://www.facebook.com/avprwarin/posts/pfbid02uzPQ5dYH1UBMMEhBXcJB1Le66sCqh4xdGcHQ1oqMpijiMZsAfKYE9CFDkoQspdPDl?rdid=XUJuc6FkVAluwL6R#" target="_blank">
+            <div class="information-card">
+                <img src="img/chonburi.png">
+              <div class="information-subtitle">
+                โรงเรียนวารินชำราบ ศึกษาดูงานนวัตกรรมโรงเรียนพนัสพิทยาคาร โรงเรียนบางละมุง ด้านนวัตกรรมการจัดการเรียนรู้ นวัตกรรมการบริหารจัดการสถานศึกษา ณ จังหวัดชลบุรี ระหว่างวันที่ 3-5 เมษายน 2568
+              </div>
+            </div>
+            </a>
+
+            <a href="https://www.facebook.com/avprwarin/posts/pfbid0jq5sHCaF3RrzmKUHw74bYufgqQK4ZMMUwjQEkccFdfVQrFfXSKZEBeeHQ6VTtkfXl?rdid=7NpukByLowzw3sWi#" target="_blank">
+            <div class="information-card">
+                <img src="img/kheunchang.png">
+              <div class="information-subtitle">
+                โรงเรียนวารินชำราบ ต้อนรับคณะผู้บริหารและครู จากโรงเรียนเขื่อนช้างวิทยาคาร จังหวัดศรีสะเกษ สพม.ศรีสะเกษ ยโสธร ศึกษาดูงาน 1  โรงเรียน 3 รูปแบบ เมื่อวันจันทร์ที่ 31 มีนาคม พ.ศ. 2568 ณ ห้องโสตทัศนศึกษา
+              </div>
+            </div>
+            </a>
+
+            <a href="https://www.facebook.com/avprwarin/posts/pfbid02FUpGsNkCEsCaBPEaPPN6YBZ8M8N1dtT9jGrzUf36pRnfSzPwrn9T6MgLCSKfbpRnl?rdid=pyZBbgSvjbkF1eEJ#" target="_blank">
+            <div class="information-card">
+                <img src="img/rat54-matt.png">
+              <div class="information-subtitle">
+                โรงเรียนวารินชำราบ ต้อนรับคณะผู้บริหารและครู จากโรงเรียนราชประชานุเคราะห์ 54 และโรงเรียนมัธยมแมด ศึกษาดูงาน 1  โรงเรียน 3 รูปแบบ เมื่อวันศุกร์ที่ 28 มีนาคม พ.ศ. 2568 ณ ห้องโสตทัศนศึกษา
+              </div>
+            </div>
+            </a> 
+
+            <a href="https://www.facebook.com/avprwarin/posts/pfbid027Vm5RiGmZARe4fZUjNtWg6PkQXJi9Db6D7KebMmzLvmoBjQdbNWUv9D5859JkBLul?rdid=XvJI4kLDzAAYJruq#" target="_blank">
+            <div class="information-card">
+                <img src="img/sri-yaso68.png">
+              <div class="information-subtitle">
+                คณะผู้บริหาร ผู้บริหารสถานศึกษา ข้าราชการครูและบุคลากรทางการศึกษาสำนักงานเขตพื้นที่การศึกษามัธยมศึกษาศรีสะเกษ ยโสธร ศึกษาดูงานโรงเรียนต้นแบบการจัดการศึกษา 1 โรงเรียน 3 รูปแบบ  เมื่อวันที่ 21 มีนาคม 2568 ณ ห้องโสตทัศนศึกษา
+              </div>
+            </div>
+            </a>
+          
+          </div>
+        </div>
+        <div class="KruBar-Grip">
+          <div class="KruBar-card">
+            <h2>การเรียน</h2>
+          </div>
+          <div class="KruBar-card">
+            <img src="img/GoogleSite.png" alt="ครูสอนออนไลน์">
+           <a href="https://sites.google.com/warin.ac.th/technology/" target="_blank" class="Kruonline">ครูประสิทธิ์ สายสุวรรณ</a><br>
+           <a href="https://sites.google.com/warin.ac.th/samrual/" target="_blank" class="Kruonline">ครูสำรวย ไชยมาตย์</a><br>
+           <a href="https://sites.google.com/view/riwthong/" target="_blank" class="Kruonline">ครูธวัชชัย ริ้วทอง</a><br>
+           <a href="https://sites.google.com/warin.ac.th/somlux/" target="_blank" class="Kruonline">ครูสมลักษณ์ มาตชัยเคน</a><br>
+           <a href="https://sites.google.com/warin.ac.th/krunarachon/" target="_blank" class="Kruonline">ครูณรัชช์อร คงลิ้ม</a><br>
+           <a href="https://sites.google.com/warin.ac.th/socialstudies-kruau/" target="_blank" class="Kruonline">ครูอุทัยวรรณ บัวใหญ่</a><br>
+           <a href="https://sites.google.com/warin.ac.th/laddawan-k/" target="_blank" class="Kruonline">ครูลัดดาวัลย์ คงพลปาน</a><br>
+           <a href="https://sites.google.com/warin.ac.th/krumeaw" target="_blank" class="Kruonline">ครูทองจันทร์ มิระสิงห์</a><br>
+           <a href="https://sites.google.com/warin.ac.th/penchankongpet" target="_blank" class="Kruonline">ครูเพ็ญจันทร์ กงเพชร</a><br>
+          </div>
+          <div class="KruBar-card">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzeO0D6Nm-TFBuheRUyW037p5jC83Pi6Ok83TDSonQMa17OQ/viewform" target="_blank"><img src="img/GoogleSite-link.gif" alt="แจ้งเพิ่มลิ้งก์"></a>
+          </div>
+          <div class="KruBar-card">
+            <a href="https://sites.google.com/warin.ac.th/iqa/" target="_blank"><img src="img/iqa-link.png" alt="งานประกันคุณภาพการศึกษา"></a>
+          </div>
+          <div class="KruBar-card">
+            <a href="https://sites.google.com/warin.ac.th/activelearningplan?fbclid=IwAR04Qb15ooLRWD5s-CSlmunZou5TyyJVd-8XrJG6rQzjbF7I5VOJNMezaag" target="_blank"><img src="img/active_plan.gif" alt="Active Learning"></a>
+          </div>
+          <div class="KruBar-card">
+            <a href="https://sites.google.com/warin.ac.th/mediawarin/" target="_blank"><img src="img/media-link.gif" alt="ทะเบียนสื่อ"></a>
+          </div>
+          <div class="KruBar-card">
+            <a href="https://sites.google.com/warin.ac.th/buddhalearningplan" target="_blank"><img src="img/BuddhaLearningPlan.jpg" alt="โรงเรียนวิถีพุทธ"></a>
+          </div>
+          <div class="KruBar-card">
+            <a href="https://sites.google.com/warin.ac.th/economyplan" target="_blank"><img src="img/economyplan.jpg" alt="เศรษฐกิจพอเพียง"></a>
+          </div>
+          <div class="KruBar-card">
+            <a href="https://sites.google.com/warin.ac.th/researchwarin" target="_blank"><img src="img/researchwarin.gif" alt="ทะเบียนงานวิจัย"></a>
+          </div>
+          <div class="KruBar-card">
+            <a href="https://sites.google.com/warin.ac.th/botanyplan" target="_blank"><img src="img/botany-link.jpg" alt="สวนพฤษ"></a>
+          </div>
+          <div class="KruBar-card">
+            <a href="https://sites.google.com/warin.ac.th/trainingcertwarin" target="_blank"><img src="img/cert-training.jpg" alt="ทะเบียนเกียรติบัตร"></a>
+          </div>
+          <div class="KruBar-card">
+            <a href="https://sites.google.com/warin.ac.th/certificatewarin" target="_blank"><img src="img/certificate.jpg" alt="ทะเบียนเกียรติบัตรโล่รางวัลและประกาศเกียรติคุณ"></a>
+          </div>
+          <div class="KruBar-card">
+            <a href="https://sites.google.com/warin.ac.th/monitoringwarin/" target="_blank"><img src="img/nited_online-link.jpg" alt="บันทึกผลการนิเทศ"></a>
+          </div>
+        </div>
+        <div class="section8">
+          <span class="video-text"><img src="img/video.png"alt="ภาพกิจกรรมโรงเรียน">วิดีโอโรงเรียน</span>
+            <div class="video-Grip">
+              <a href="https://www.youtube.com/watch?v=75SFEsWHLbc&t=19s" target="_blank" class="video-card">
+                <img src="http://img.youtube.com/vi/75SFEsWHLbc/hqdefault.jpg" style="object-fit: cover; margin-top: -38px;">
+              </a>
+              <a href="https://www.youtube.com/watch?v=F2Ie5zkFifE" target="_blank" class="video-card">
+                <img src="http://img.youtube.com/vi/F2Ie5zkFifE/hqdefault.jpg" style="object-fit: cover; margin-top: -38px;">
+              </a>
+              <a href="https://www.youtube.com/watch?v=Zp-PKcHXYvU" target="_blank" class="video-card">
+                <img src="http://img.youtube.com/vi/Zp-PKcHXYvU/hqdefault.jpg" style="object-fit: cover; margin-top: -38px;">
+              </a>
+              <a href="https://www.youtube.com/watch?v=_IA140DPfmc" target="_blank" class="video-card">
+                <img src="http://img.youtube.com/vi/_IA140DPfmc/hqdefault.jpg" style="object-fit: cover; margin-top: -38px;">
+              </a>
+              <a href="https://www.youtube.com/watch?v=sbdyBIWD6uc" target="_blank" class="video-card">
+                <img src="http://img.youtube.com/vi/sbdyBIWD6uc/hqdefault.jpg" style="object-fit: cover; margin-top: -38px;">
+              </a>
+              <a href="https://www.youtube.com/watch?v=r-snkBsDWrM" target="_blank" class="video-card">
+                <img src="http://img.youtube.com/vi/r-snkBsDWrM/hqdefault.jpg" style="object-fit: cover; margin-top: -38px;">
+              </a>
+              <a href="https://www.youtube.com/watch?v=z-xK-v9XszE" target="_blank" class="video-card">
+                <img src="http://img.youtube.com/vi/z-xK-v9XszE/hqdefault.jpg" style="object-fit: cover; margin-top: -38px;">
+              </a>
+              <a href="https://www.youtube.com/watch?v=SekcIfb60uA&t=5s" target="_blank" class="video-card">
+                <img src="http://img.youtube.com/vi/SekcIfb60uA/hqdefault.jpg" style="object-fit: cover; margin-top: -38px;">
+              </a>
+              <a href="https://www.youtube.com/watch?v=wO_oqeJhpYI" target="_blank" class="video-card">
+                <img src="http://img.youtube.com/vi/wO_oqeJhpYI/hqdefault.jpg"style="object-fit: cover; margin-top: -38px;">
+              </a>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <h1>WarinChamRap School</h1>
+          <p>โรงเรียนวารินชำราบ 56 หมู่ 1 บ้านท่าข้องเหล็ก ตำบลคำน้ำแซบ อำเภอวารินชำราบ จังหวัดอุบลราชธานี 34190, 0-9560-12223</p>
+          <br>
+          <img src="img/line_school.jpg" onclick="showFullscreen(this)" alt="ติดต่อสอบถาม">
+          <br>
+          <img src="img/Visit.png" style="height: auto; width: 40px; position: absolute; left: 47%; margin-top: 20px;"><div class="website-counter"></div>
+        </footer>
+    </ol>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="script.js"></script> <!-- เชื่อมกับ JavaScript -->
+</body>

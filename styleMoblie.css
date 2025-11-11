@@ -1,0 +1,640 @@
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+    z-index: -999999999999999999999;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(37, 38, 38);
+  }
+  
+  a {
+    text-decoration:none;
+  }
+  
+  h1{
+    font-size: 30px;
+    color: rgb(255, 231, 76);
+    font-family: "Niramit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.222);
+  }
+  
+  .Kruonline{
+    font-size: 15px;
+    color: rgb(40, 40, 40);
+    font-family: "Niramit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.222);
+  }
+  .Doolead{
+    font-size: 45px;
+    color: rgb(255, 231, 76);
+    font-family: "Niramit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    -webkit-text-stroke: 1px rgba(37, 37, 37, 0.562);
+  }
+  
+  .subtitle {
+    font-size: 25px;
+    color: #444;
+    margin-bottom: 40px;
+    margin-top: -10px;
+    font-family: "Niramit", sans-serif;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;   /* จัดให้อยู่กึ่งกลางแนวนอน */
+    align-items: start;       /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    width: 100vw;              /* กว้างเต็มหน้าจอ */
+    height: 100vh;             /* สูงเต็มหน้าจอ */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;          /* ป้องกัน scroll bar */
+  }
+  
+  .content {
+    text-align: center;
+    max-width: 100%;         /* จำกัดความกว้างของเนื้อหา */
+    padding: 20px;            /* ให้มีพื้นที่รอบข้อความ */
+  }
+  
+  ::-moz-selection { /* Code for Firefox */
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+  }
+  
+  ::selection {
+    color: #000000;
+    background: rgb(255, 255, 255);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes ZoomIn {
+    from {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes scroll-up {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+  
+  .ZoomIn {
+    opacity: 0;
+    animation: ZoomIn ease 1s forwards;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn ease 2s forwards;
+  }
+  .fadeInLeft {
+    opacity: 0;
+    animation: fadeInLeft ease 2s forwards;
+  }
+  
+  .fade-inUp {
+    opacity: 0;
+    animation: fadeInUp ease 2s forwards;
+  }
+  
+  li {
+    float: left;
+  }
+    
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-family: "Niramit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .HBar{
+    font-family: "Niramit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(37, 37, 37);
+  }
+    
+  ol{
+    justify-content: center;   /* จัดให้อยู่กึ่งกลางแนวนอน */
+    align-items: flex-start;       /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    max-width: auto;         /* จำกัดความกว้างของเนื้อหา */
+    padding: 0px;            /* ให้มีพื้นที่รอบข้อความ */
+  } 
+  
+  
+  .section1 {
+    /* background: -webkit-linear-gradient(rgb(255, 251, 211), rgb(255, 248, 171));    background-color: rgb(255, 251, 204);*/
+    background-color: rgb(37, 37, 37);
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #0000002a;
+    position: fixed;
+    z-index: 100;
+  }
+  .section2 {
+    margin-top: 150px;
+    background-color:rgb(255, 235, 20);
+    height: 1000px;
+    width: 100%;
+    border-bottom: 1px solid #0000002a;
+    overflow: hidden; /* ระวังถ้าเปิดอันนี้ */
+    display: block;
+    background-image: url('img/BackGround01.jpg'); /* เปลี่ยนเป็นชื่อไฟล์หรือ URL รูป */
+      background-size: cover;      /* ปรับให้รูปครอบเต็มหน้าจอ */
+      background-position: center; /* จัดตำแหน่งกลาง */
+      background-repeat: no-repeat;/* ไม่ซ้ำ */
+  }
+  .section2-5 {
+    background-color:rgb(255, 254, 243);
+    width: 100%;
+    border-bottom: 1px solid #0000002a;
+  }
+  .section3 {
+    background-color: rgb(37, 38, 38);
+    height: 200px;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #0000002a;
+  }
+  
+  .section4 {
+    display: flex;
+    margin-top:0;
+    background-color:rgb(255, 254, 243);
+    height: 220px;
+    width: 100%;
+  }
+  
+  .section5 {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    background-color:rgb(255, 254, 243);
+  }
+  
+  .section6 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 30px 10px;
+    width: 100%;
+    background-color:rgb(255, 254, 243);
+    flex-wrap: wrap;
+    border-bottom: 1px solid #000000;
+  }
+  
+  .section7 {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    background-color:rgb(254, 252, 237);
+  }
+  
+  .section8 {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    background-color:rgb(254, 252, 237);
+  }
+  
+  .footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 10px;
+  }
+  
+  .text-box1 {
+    width: 300px;
+    padding: 20px;
+    background-color: #fefae0;
+    border: 2px solid #d4a373;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'sans-serif';
+    color: #333;
+  
+    display: block;
+    overflow: hidden;
+    border: 1px solid rgb(60, 60, 60);
+    position: relative;
+  
+    margin-left: 1050px;
+    margin-top: -70px;
+  }
+
+  .Tag-moblie{
+    height: 70px;
+    width: auto;
+    margin: 68px auto;
+    z-index: 1;
+    position: absolute;
+  }
+  
+  .Headermenu {
+    position: relative;
+    margin-left: 450px;
+    top: 35px;
+  }
+
+  .menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    margin-left: -130px;
+    margin-top: -25px;
+    color: white;
+
+    display: block;
+  }
+
+  .side-menu {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #494949;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+  }
+
+  .side-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .side-menu a:hover {
+    background-color: #444;
+  }
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #292929;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+
+  font-family: Niramit, sans-serif; 
+  font-weight: 700; 
+  font-style: bold; 
+  color: #ffffff;
+  -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.462);
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  background-color: rgb(255, 240, 78);
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  font-size: 36px;
+  text-align: right;
+  width: 500px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 5px rgb(21, 21, 21);
+
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  height: 60px;
+  margin-left: 10px;
+
+  font-family: "Niramit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  padding: 8px 8px 8px 32px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  width: 100%;
+
+  font-family: Niramit, sans-serif; 
+  font-weight: 700; 
+  font-style: bold; 
+  color: #ffffff;
+  -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.462);
+}
+
+.dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.dropdown-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #2b2b2b;
+  padding-left: 32px;
+}
+
+
+.dropdown-container a {
+  padding: 8px 0;
+  display: block;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.dropdown-container a:hover {
+  color: #fff;
+}
+
+.dropdown-container.open {
+  max-height: 1000px;
+}
+
+    .slider-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    }
+
+    /* Slider 1 */
+    .slider-1 {
+      width: 320px;
+      height: 216px;
+      z-index: 10;
+    }
+
+    /* Slider 2 */
+    .slider-2 {
+      width: 261px;
+      height: 288px;
+      z-index: 10;
+    }
+
+    .slider {
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      position: relative;
+    }
+
+    .track {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+
+    .slide {
+      flex-shrink: 0;
+    }
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ✅ เห็นภาพครบ */
+  display: block;
+  user-select: none;
+}
+
+.image-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.3s ease;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease;
+}
+
+/* Styles for reset button */
+#reset {
+  margin-top: 20px;
+  background-color: #008cba;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 20px;
+  color: white;
+  border: 0;
+}
+
+.banner-full {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  overflow: auto;
+  inset-inline-start: -500px;
+  inset-block-start: 0px;
+  margin-top: 150px;
+}
+
+.container-profile{
+  position: absolute;
+  margin-top: 210px;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.profile-img {
+  height: 290px; 
+  width: auto; 
+  z-index: 10;
+  border: 2px solid rgba(60, 60, 60, 0.259);
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5); 
+}
+
+.grid-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 100px;
+  margin-left: 1050px;
+  margin-top: -650px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  border: 1px solid rgba(60, 60, 60, 0.259);
+  position: relative;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.smallnewpaper {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.smallnewpaper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: max-content;
+  animation: scroll-horizontal 10s linear infinite;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.6%);
+  }
+}
+
+}

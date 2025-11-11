@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>โรงเรียนวารินชำราบ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .menu {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .menu h3 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .menu a {
+      display: block;
+      padding: 0.3rem 0;
+      color: #004080;
+      text-decoration: none;
+    }
+    .menu a:hover {
+      text-decoration: underline;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .video-grid img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>โรงเรียนวารินชำราบ</h1>
+  </header>
+  <div class="container">
+    <main>
+      <section class="card">
+        <h2>ภาพกิจกรรมโรงเรียน</h2>
+        <div class="video-grid">
+          <div>
+            <img src="กิจกรรม1.jpg" alt="กิจกรรม 1">
+            <p>ศึกษาดูงาน จังหวัดชลบุรี</p>
+          </div>
+          <div>
+            <img src="กิจกรรม2.jpg" alt="กิจกรรม 2">
+            <p>โรงเรียนเครือข่ายวิชาการ</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>วิดีโอโรงเรียน</h2>
+        <div class="video-grid">
+          <img src="video1.jpg" alt="วิดีโอ 1">
+          <img src="video2.jpg" alt="วิดีโอ 2">
+          <img src="video3.jpg" alt="วิดีโอ 3">
+          <img src="video4.jpg" alt="วิดีโอ 4">
+        </div>
+        <a href="#">ดูวิดีโอทั้งหมด</a>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <div class="menu">
+        <h3>ระบบการเรียน</h3>
+        <a href="#">การประกันคุณภาพ</a>
+        <a href="#">Active Learning</a>
+        <a href="#">ทะเบียนแผนการเรียนรู้</a>
+      </div>
+      <div class="menu">
+        <h3>ทะเบียนและการรับรอง</h3>
+        <a href="#">ทะเบียนแผนรายวิชา</a>
+        <a href="#">ทะเบียนเกียรติบัตร</a>
+        <a href="#">ประกาศผลนักเรียนดีเด่น</a>
+      </div>
+      <div class="menu">
+        <h3>ระบบออนไลน์</h3>
+        <a href="#">ระบบพิมพ์เกียรติบัตร</a>
+        <a href="#">Google Site ครู</a>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
